@@ -6,17 +6,13 @@ rl = readline.createInterface({
 })
 
 rl.question('Ingrese una cadena de texto.\n', (msg) => {
-    let palabras = msg.split(" ")
-    let resultados = []
-    for (let palabra of palabras){
-        let palabra_invertida = palabra.split("").reverse().join("")
-        if (palabra == palabra_invertida){
-            resultados.push(`${palabra} es una palabra palíndromo`)
-        }
-        else {
-            resultados.push(`${palabra} no es una palabra palíndromo`)
+    const VOCALES = 'aeiouAEIOU'
+    let contador = 0
+    for (let i = 0; i < msg.length; i++) {
+        if (VOCALES.includes(msg[i])) {
+            contador++
         }
     }
-    console.log(resultados.join('\n'))
+    console.log(`El número de vocales en la cadena de texto son: ${contador}`)
     rl.close()
 })
