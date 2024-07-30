@@ -5,8 +5,8 @@ rl = readline.createInterface({
     output: process.stdout
 })
 
-rl.question('Ingrese la cadena de texto.\n', (msg) => {
+rl.question('Ingrese una cadena de texto.\n', (msg) => {
     const MSGUPPER = msg.toUpperCase()
-    console.log(`La cadena de texto en mayúsculas es: ${MSGUPPER}`)
+    console.log(`Su cadena de texto en mayúsculas es: ${MSGUPPER}`)
     rl.close()
 })

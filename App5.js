@@ -5,8 +5,10 @@ rl = readline.createInterface({
     output: process.stdout
 })
 
-rl.question('Ingrese la cadena de texto.\n', (msg) => {
-    const MSGSUB = msg.substring(0, 10)
-    console.log(`La subcadena es: ${MSGSUB}`)
-    rl.close()
+rl.question('Ingrese una cadena de texto.\n', (msg) => {
+    rl.question('Ingrese la cantidad maxima de letras para su subcadena.\n', (i) => {
+        const MSGSUB = msg.substring(0, i)
+        console.log(`Su subcadena es: ${MSGSUB}`)
+        rl.close()
+    })
 })

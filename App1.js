@@ -5,8 +5,8 @@ rl = readline.createInterface({
     output: process.stdout
 })
 
-rl.question('¿Cuál es tu nombre?\n', (nombre) => {
-    rl.question('¿Cuál es tu apellido? ', (apellido) => {
+rl.question('¿Cuál es su nombre?\n', (nombre) => {
+    rl.question('¿Cuál es su apellido?\n', (apellido) => {
         console.log(`Hola, ${nombre} ${apellido}!`)
         rl.close()
     })

@@ -5,8 +5,8 @@ rl = readline.createInterface({
     output: process.stdout
 })
 
-rl.question('Escriba la cadena de texto.\n', (msg) => {
+rl.question('Escriba una cadena de texto.\n', (msg) => {
     const MSGREPLACE = msg.replace('si', 'no')
-    console.log(`La reemplazada es: ${MSGREPLACE}`)
+    console.log(`Su cadena de texto reemplazando si por no es: ${MSGREPLACE}`)
     rl.close()
 })

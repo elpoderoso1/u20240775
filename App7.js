@@ -7,6 +7,6 @@ rl = readline.createInterface({
 
 rl.question('Ingrese una cadena de texto.\n', (msg) => {
     const CADENAINVERTIDA = msg.split("").reverse().join("")
-    console.log(`La cadena invertida es: ${CADENAINVERTIDA}`)
+    console.log(`Su cadena de texto invertida es: ${CADENAINVERTIDA}`)
     rl.close()
 })

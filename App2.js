@@ -5,8 +5,8 @@ rl = readline.createInterface({
     output: process.stdout
 })
 
-rl.question('Escriba la cadena de texto.\n', (msg) => {
+rl.question('Escriba una cadena de texto.\n', (msg) => {
     const CHARCOUNT = msg.length
-    console.log(`La cantidad de caracteres en el mensaje son: ${CHARCOUNT}`)
+    console.log(`La cantidad de caracteres en su mensaje son: ${CHARCOUNT}`)
     rl.close()
 })
